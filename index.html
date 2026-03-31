@@ -503,7 +503,7 @@ footer{background:#050505;border-top:1px solid #1a1a1a;padding:3rem 2rem 2rem;te
         <div class="form-wrap step-content" id="step-2">
           <div class="form-title">Votre <span>Projet</span></div>
           <div class="form-group"><label>Type de Surface *</label>
-            <select id="s-type">
+            <select id="s-type" name="type_surface" required>
               <option value="">Selectionnez...</option>
               <option>Entree residentielle</option>
               <option>Stationnement commercial</option>
@@ -513,7 +513,7 @@ footer{background:#050505;border-top:1px solid #1a1a1a;padding:3rem 2rem 2rem;te
             </select>
           </div>
           <div class="form-group"><label>Superficie estimee</label>
-            <select id="s-superficie">
+            <select id="s-superficie" name="superficie_estimee">
               <option value="">Selectionnez...</option>
               <option>Moins de 100 pi2</option>
               <option>100 a 300 pi2</option>
@@ -523,7 +523,7 @@ footer{background:#050505;border-top:1px solid #1a1a1a;padding:3rem 2rem 2rem;te
             </select>
           </div>
           <div class="form-group"><label>Services requis</label>
-            <select id="s-service">
+            <select id="s-service" name="services_requis">
               <option value="">Selectionnez...</option>
               <option>Scellant seulement</option>
               <option>Scellant et reparation de fissures</option>
@@ -532,7 +532,7 @@ footer{background:#050505;border-top:1px solid #1a1a1a;padding:3rem 2rem 2rem;te
             </select>
           </div>
           <div class="form-group"><label>Quand souhaitez-vous le service?</label>
-            <select id="s-quand">
+            <select id="s-quand" name="quand_service">
               <option value="">Selectionnez...</option>
               <option>Le plus tot possible</option>
               <option>Dans les 2 prochaines semaines</option>
@@ -541,7 +541,7 @@ footer{background:#050505;border-top:1px solid #1a1a1a;padding:3rem 2rem 2rem;te
               <option>Date flexible</option>
             </select>
           </div>
-          <div class="form-group"><label>Notes supplementaires</label><textarea id="s-notes" placeholder="Decrivez l'état actuel de votre asphalte..."></textarea></div>
+          <div class="form-group"><label>Notes supplementaires</label><textarea id="s-notes" name="notes" placeholder="Decrivez l'état actuel de votre asphalte..."></textarea></div>
           <div style="display:flex;gap:1rem;flex-wrap:wrap;">
             <button type="button" class="btn-secondary" onclick="nextStep(1)">Retour</button>
 <button type="submit" class="btn-primary">Envoyer la Soumission</button>
