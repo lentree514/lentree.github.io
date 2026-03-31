@@ -326,8 +326,15 @@ footer{background:#050505;border-top:1px solid #1a1a1a;padding:3rem 2rem 2rem;te
       <div class="reviews-grid" id="reviewsGrid"></div>
       <div class="review-form-wrap">
         <div class="review-form-title">Laissez votre Avis</div>
-        <div class="form-group"><label>Votre nom</label><input type="text" id="r-name" placeholder="ex: Marie T."></div>
-        <div class="form-group"><label>Votre ville</label><input type="text" id="r-ville" placeholder="ex: Laval, QC"></div>
+        <div class="form-group">
+  <label>Votre nom</label>
+  <input type="text" id="r-name" name="nom_client" placeholder="ex: Marie T." required>
+</div>
+
+<div class="form-group">
+  <label>Votre ville</label>
+  <input type="text" id="r-ville" name="ville" placeholder="ex: Laval, QC" required>
+</div>
         <div class="form-group"><label>Note</label>
           <div class="star-rating" id="starRating">
             <span onclick="setStars(1)">&#9734;</span>
@@ -388,11 +395,25 @@ footer{background:#050505;border-top:1px solid #1a1a1a;padding:3rem 2rem 2rem;te
         <div class="form-wrap">
           <div class="form-title">Envoyer un <span>Message</span></div>
           <div class="form-row">
-            <div class="form-group"><label>Prenom</label><input type="text" id="c-prenom" placeholder="Jean"></div>
-            <div class="form-group"><label>Nom</label><input type="text" id="c-nom" placeholder="Tremblay"></div>
+<div class="form-group">
+  <label>Prenom</label>
+  <input type="text" id="c-prenom" name="prenom" placeholder="Jean" required>
+</div>
+
+<div class="form-group">
+  <label>Nom</label>
+  <input type="text" id="c-nom" name="nom" placeholder="Tremblay" required>
+</div>
           </div>
-          <div class="form-group"><label>Telephone</label><input type="tel" id="c-tel" placeholder="514-xxx-xxxx"></div>
-          <div class="form-group"><label>Courriel</label><input type="email" id="c-email" placeholder="vous@exemple.com"></div>
+          <div class="form-group">
+  <label>Telephone</label>
+  <input type="tel" id="c-tel" name="telephone" placeholder="514-xxx-xxxx" required>
+</div>
+
+<div class="form-group">
+  <label>Courriel</label>
+  <input type="email" id="c-email" name="email" placeholder="vous@exemple.com" required>
+</div>
           <div class="form-group"><label>Sujet</label>
             <select id="c-sujet">
               <option value="">Selectionnez...</option>
@@ -462,10 +483,20 @@ footer{background:#050505;border-top:1px solid #1a1a1a;padding:3rem 2rem 2rem;te
   <input type="text" id="s-nom" name="nom" placeholder="Tremblay" required>
 </div>
           </div>
-          <div class="form-group"><label>Adresse du projet *</label><input type="text" id="s-adresse" placeholder="123 Rue des Erables, Laval, QC"></div>
+          <div class="form-group">
+  <label>Adresse du projet *</label>
+  <input type="text" id="s-adresse" name="adresse_projet" placeholder="123 Rue des Erables, Laval, QC" required>
+</div>
           <div class="form-row">
-            <div class="form-group"><label>Telephone *</label><input type="tel" id="s-tel" placeholder="514-xxx-xxxx"></div>
-            <div class="form-group"><label>Courriel</label><input type="email" id="s-email" placeholder="vous@exemple.com"></div>
+           <div class="form-group">
+  <label>Telephone *</label>
+  <input type="tel" id="s-tel" name="telephone" placeholder="514-xxx-xxxx" required>
+</div>
+
+<div class="form-group">
+  <label>Courriel *</label>
+  <input type="email" id="s-email" name="email" placeholder="vous@exemple.com" required>
+</div>
           </div>
           <button class="btn-primary" onclick="nextStep(2)">Suivant</button>
         </div>
