@@ -190,7 +190,7 @@ footer{background:#050505;border-top:1px solid #1a1a1a;padding:3rem 2rem 2rem;te
     <button onclick="showPage('contact')" id="nav-contact">Contact</button>
     <button onclick="showPage('soumission')" id="nav-soumission" class="nav-cta">Soumission</button>
   </div>
-  <button class="mobile-menu-btn" onclick="toggleMenu()">Menu</button>
+  <button type="button" class="mobile-menu-btn" onclick="toggleMenu()">Menu</button>
 </nav>
 
 <div class="page active" id="page-accueil">
@@ -543,10 +543,11 @@ footer{background:#050505;border-top:1px solid #1a1a1a;padding:3rem 2rem 2rem;te
           </div>
           <div class="form-group"><label>Notes supplementaires</label><textarea id="s-notes" name="notes" placeholder="Decrivez l'état actuel de votre asphalte..."></textarea></div>
           <div style="display:flex;gap:1rem;flex-wrap:wrap;">
-            <button type="button" class="btn-secondary" onclick="nextStep(1)">Retour</button>
-<button type="submit" class="btn-primary">Envoyer la Soumission</button>
-          </div>
-        </div>
+  <button type="button" class="btn-secondary" onclick="nextStep(1)">Retour</button>
+  <button type="submit" class="btn-primary">Envoyer la Soumission</button>
+</div>
+</div>
+</form>
         <div class="form-wrap step-content" id="step-3" style="text-align:center;">
           <div style="font-size:4rem;margin-bottom:1rem;">&#10004;</div>
           <div class="form-title"><span>Soumission Envoyee!</span></div>
@@ -555,7 +556,7 @@ footer{background:#050505;border-top:1px solid #1a1a1a;padding:3rem 2rem 2rem;te
             <div style="font-family:'Barlow Condensed',sans-serif;font-size:0.8rem;letter-spacing:2px;color:var(--orange);text-transform:uppercase;margin-bottom:0.5rem;">Pour une reponse encore plus rapide</div>
             <div style="font-family:'Bebas Neue',sans-serif;font-size:2rem;color:var(--white);">514-758-8386</div>
           </div>
-          <div><button class="btn-secondary" onclick="resetSoumission()">Nouvelle demande</button></div>
+          <button type="button" class="btn-secondary" onclick="resetSoumission()">Nouvelle demande</button>
         </div>
       </div>
     </div></section>
