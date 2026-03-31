@@ -498,7 +498,7 @@ footer{background:#050505;border-top:1px solid #1a1a1a;padding:3rem 2rem 2rem;te
   <input type="email" id="s-email" name="email" placeholder="vous@exemple.com" required>
 </div>
           </div>
-          <button class="btn-primary" onclick="nextStep(2)">Suivant</button>
+          <button type="button" class="btn-primary" onclick="nextStep(2)">Suivant</button>
         </div>
         <div class="form-wrap step-content" id="step-2">
           <div class="form-title">Votre <span>Projet</span></div>
@@ -543,8 +543,8 @@ footer{background:#050505;border-top:1px solid #1a1a1a;padding:3rem 2rem 2rem;te
           </div>
           <div class="form-group"><label>Notes supplementaires</label><textarea id="s-notes" placeholder="Decrivez l'état actuel de votre asphalte..."></textarea></div>
           <div style="display:flex;gap:1rem;flex-wrap:wrap;">
-            <button class="btn-secondary" onclick="nextStep(1)">Retour</button>
-            <button class="btn-primary" onclick="nextStep(3)">Envoyer la Soumission</button>
+            <button type="button" class="btn-secondary" onclick="nextStep(1)">Retour</button>
+<button type="submit" class="btn-primary">Envoyer la Soumission</button>
           </div>
         </div>
         <div class="form-wrap step-content" id="step-3" style="text-align:center;">
